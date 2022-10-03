@@ -34,12 +34,18 @@ body {
 }
 
 #titleBanner h1.tp {
-  font-size: 100%;
+  font-size: 250%;
+}
+
+#titleBanner h1.black {
+  color: #000000;
+  text-shadow: 0 8px 8px #ffffff;
 }
 
 #titleBanner h1.tp6 {
   color: black;
 }
+
 
 #recipeColumns {
   padding: 2vh;
@@ -53,6 +59,21 @@ body {
 #recipeColumns div#ingredients { flex-basis 33% ;}
 #recipeColumns div#equipment { flex-basis 33% ;}
 #recipeColumns div#directions { flex-basis 1% ;}
+
+/* hide columns */
+#recipeColumns #ingredients ul,
+#recipeColumns #equipment ul,
+#recipeColumns #directions ol { 
+  display: none; 
+}
+
+#recipeColumns #ingredients.tpShow ul,
+#recipeColumns #equipment.tpShow ul,
+#recipeColumns #directions.tpShow ol 
+{
+  display: block;
+}
+
 
 #recipeColumns ul,
 #recipeColumns ol {
