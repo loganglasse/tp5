@@ -33,6 +33,10 @@ body {
   line-height: 80%;
 }
 
+#titleBanner h1.tp {
+  font-size: 100%;
+}
+
 #titleBanner h1.tp6 {
   color: black;
 }
